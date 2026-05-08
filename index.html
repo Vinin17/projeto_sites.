@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto_sites</title>
+</head>
+<body>
+    <header> <!-- parte superior do site,fundamental para navegação e identidade da marca-->
+        <h1>Vinícius Closs</h1> <!-- identifica o texto dentro como o titulo principal -->
+        <p>Seja bem vindo</p> <!-- identifica o texto dentro como paragrafo -->
+    </header>
+
+    <Section> <!-- define um agrupamento tematico de conteudo -->
+        <p>Eu sei fazer sites em <strong>HTML</strong> e estou fazendo um trabalho para a matéria de <em>Criação de Sites</em></p>
+        <!-- <Strong>: modifica o texto para negrito e entende que possui mais prioridade semantica do que a tag <b>, 
+            <em>: modifica o texto para italico  e entende que possui mais prioridade semantica do que a tag <i>-->
+    </Section>
+    <main> <!-- onde fica o conteudo principal do site-->
+        <fieldset><!-- cria um quadrado para organizar elentos dentro dela -->
+            <legend>Insira seus dados:</legend> <!-- cria uma legenda para o fieldset -->
+            
+            <label for="email">Email:</label> <!-- rotulo ou etiqueta, descrevendo o item-->
+            <input required type="email" id="email"><br> <!-- local para entrada de dados,informações ou conteudos-->
+            <!-- type="email": define a area de texto para receber emails -->
+            <p>Area de Interesse:</p>
+            <input type="radio" id="back" name="area"> <!-- type="radio": define botões circulares, para opções de escolha -->
+            <label for="back">Back-end</label>
+            <input type="radio" id="front" name="area">
+            <label for="front">Front-end</label>
+            <input type="radio" id="full" name="area">
+            <label for="full">Full-stack</label>
+
+            <p>Habilidades:</p>
+            <input type="checkbox" id="HTML"> <!-- cria uma caixa de seleção-->
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="C">
+            <label for="C">C</label>
+            <input type="checkbox" id="git">
+            <label for="git">Git</label>
+            <input type="checkbox" id="redes">
+            <label for="redes">Redes</label><br><br>
+
+            <button type="submit">Enviar</button> <!-- <button>: usado para criar um botão clicavel,
+                type="submit": "tipo=enviar"-->
+
+        </fieldset><br>
+    </main>
+    <footer> <!-- Usado no final da pagina-->
+            <a href="https://github.com/Vinin17">Perfil no GitHub</a> <!-- <a>: adiciona um link ao site -->
+            <p><u>08 de Maio de 2026</u></p> <!-- <u> deixa o texto sublinhado-->
+    </footer>
+</body>
+</html>
